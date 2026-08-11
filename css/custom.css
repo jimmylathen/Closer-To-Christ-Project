@@ -1,0 +1,112 @@
+/* ===================================
+   Closer to Christ - Custom Theme
+   =================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
+
+/* Maroon color + bold throughout */
+body {
+  color: #800000;
+  font-weight: 700;
+}
+
+:root {
+  --bs-body-color: #800000;
+  --bs-link-color: #800000;
+  --bs-link-hover-color: #5c0000;
+}
+
+p, li, .card-body {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+}
+
+p strong {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+}
+
+/* Widen main content column to reduce side margins */
+main .col-md-10,
+main .col-lg-8,
+main .col-xl-7 {
+  width: 92% !important;
+  max-width: 92% !important;
+  flex: 0 0 92% !important;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+/* Nav: full-width so brand sits in true top-left corner */
+#mainNav .container {
+  max-width: none !important;
+  padding-left: 1.25rem !important;
+  padding-right: 1.25rem !important;
+}
+
+/* Always white navbar background — overrides the transparent desktop state */
+#mainNav {
+  background-color: #fff !important;
+  border-bottom: 1px solid #dee2e6 !important;
+}
+
+/* Nav brand + links: maroon */
+#mainNav .navbar-brand,
+#mainNav .navbar-brand span {
+  color: #800000 !important;
+}
+
+/* Extra gap + light weight for "by Jimmy Lathen" */
+#mainNav .navbar-brand span {
+  margin-left: 0.4rem;
+  font-weight: normal !important;
+}
+
+#mainNav .navbar-nav .nav-link,
+#mainNav .navbar-toggler {
+  color: #800000 !important;
+}
+
+#mainNav .navbar-nav .nav-link:hover,
+#mainNav .navbar-nav .nav-link:focus {
+  color: #5c0000 !important;
+}
+
+#mainNav .dropdown-item {
+  color: #800000 !important;
+}
+
+#mainNav .dropdown-item:hover {
+  color: #5c0000 !important;
+}
+
+/* Main content headings */
+main h1, main h2, main h3, main h4, main h5, main h6 {
+  color: #800000;
+  text-transform: uppercase;
+}
+
+/* Unit cards */
+.card-title {
+  color: #800000 !important;
+}
+
+/* Footer */
+footer,
+footer .text-muted {
+  color: #000000 !important;
+}
+
+/* Keep all masthead (header image area) text WHITE */
+header.masthead,
+header.masthead h1,
+header.masthead h2,
+header.masthead .h1,
+header.masthead .h2,
+header.masthead .subheading,
+header.masthead span,
+header.masthead p,
+header.masthead .meta,
+header.masthead a {
+  color: #ffffff !important;
+}
